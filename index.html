@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pokedex">
+      <!-- Left Side -->
+      <div class="left-side">
+        <!-- Decorative Buttons -->
+        <div class="decorative-buttons">
+          <div class="button red"></div>
+          <div class="button green"></div>
+          <div class="button yellow"></div>
+        </div>
+
+        <!-- Pokémon Image Screen -->
+        <div class="pokedex-screen">
+          <img
+            src="https://via.placeholder.com/120"
+            alt="Pokemon"
+            class="pokemon-image"
+            id="pokeImg"
+          />
+        </div>
+
+        <!-- Pokémon Stats -->
+        <div class="pokemon-stats">
+          <h2>Pokémon Stats</h2>
+          <p id="pokeType" style="margin-bottom: 5px"></p>
+          <ul
+            id="lstStats"
+            style="list-style-type: none; margin-left: 3px"
+          ></ul>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="right-side">
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search Pokémon..."
+            id="search-input"
+          />
+          <button id="search">Search</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
